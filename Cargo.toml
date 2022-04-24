@@ -1,0 +1,15 @@
+[package]
+name = "kf"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.57"
+clap-v3 = "3.0.0-beta.1"
+chrono = "0.4"
+futures = "0.3.21"
+rdkafka = { version = "0.25", features = ["cmake-build"] }
+tokio = { version = "1", features = ["full"] }
+uuid =  { version = "1.0.0", features = ["v4"] }
